@@ -4,20 +4,68 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="Y9VNiotUnhlwHroJTU1b-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
-          <mxGeometry height="80" width="80" x="250" y="150" as="geometry" />
+        <mxCell id="YlkJujCgIezjYRT9a3T3-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="540" width="750" x="750" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="Y9VNiotUnhlwHroJTU1b-2" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" value="List" vertex="1">
-          <mxGeometry height="120" width="140" x="140" y="380" as="geometry" />
+        <mxCell id="YlkJujCgIezjYRT9a3T3-8" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;UserTier&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;FREE&lt;br&gt;PREMIUM&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="150" x="110" y="290" as="geometry" />
         </mxCell>
-        <mxCell id="Y9VNiotUnhlwHroJTU1b-3" parent="Y9VNiotUnhlwHroJTU1b-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Item 1" vertex="1">
-          <mxGeometry height="30" width="140" y="30" as="geometry" />
+        <mxCell id="YlkJujCgIezjYRT9a3T3-16" edge="1" parent="1" source="YlkJujCgIezjYRT9a3T3-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YlkJujCgIezjYRT9a3T3-8" value="">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Y9VNiotUnhlwHroJTU1b-4" parent="Y9VNiotUnhlwHroJTU1b-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Item 2" vertex="1">
-          <mxGeometry height="30" width="140" y="60" as="geometry" />
+        <mxCell id="YlkJujCgIezjYRT9a3T3-10" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;User&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- userId: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tier: UserTier&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="105" y="100" as="geometry" />
         </mxCell>
-        <mxCell id="Y9VNiotUnhlwHroJTU1b-5" parent="Y9VNiotUnhlwHroJTU1b-2" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" value="Item 3" vertex="1">
-          <mxGeometry height="30" width="140" y="90" as="geometry" />
+        <mxCell id="YlkJujCgIezjYRT9a3T3-43" edge="1" parent="1" source="YlkJujCgIezjYRT9a3T3-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="YlkJujCgIezjYRT9a3T3-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-15" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;RateLimiterService&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- rateLimiters: Map&amp;lt;UserTier, org.psuedovert.rate_limiter.limiter.RateLimiter&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ allowRequest(User): boolean&lt;/p&gt;" vertex="1">
+          <mxGeometry height="120" width="240" x="470" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-33" edge="1" parent="1" source="YlkJujCgIezjYRT9a3T3-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YlkJujCgIezjYRT9a3T3-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-34" edge="1" parent="1" source="YlkJujCgIezjYRT9a3T3-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="YlkJujCgIezjYRT9a3T3-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-18" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;RateLimiterConfig&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- maxRequests: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- windowInSeconds: int&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="1540" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-20" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;enum&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;RateLimiterType&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;TOKEN_BUCKET&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;FIXED_WINDOW&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SLIDING_WINDOW_LOG&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;SLIDING_WINDOW_COUNTER&lt;br&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="190" x="1530" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-29" edge="1" parent="1" source="YlkJujCgIezjYRT9a3T3-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="YlkJujCgIezjYRT9a3T3-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-25" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TokenBucket&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ allowRequests(userId): boolean&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="150" x="800" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-31" edge="1" parent="1" source="YlkJujCgIezjYRT9a3T3-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="YlkJujCgIezjYRT9a3T3-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-26" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SlidingWindowLog&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ allowRequests(userId): boolean&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="150" x="1110" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-30" edge="1" parent="1" source="YlkJujCgIezjYRT9a3T3-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="YlkJujCgIezjYRT9a3T3-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-27" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;FixedWindow&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ allowRequests(userId): boolean&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="150" x="910" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-32" edge="1" parent="1" source="YlkJujCgIezjYRT9a3T3-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="YlkJujCgIezjYRT9a3T3-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-28" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;SlidingWindowCounter&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;+ allowRequests(userId): boolean&lt;/span&gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="150" x="1260" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-17" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;abstract&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;org.psuedovert.rate_limiter.limiter.RateLimiter&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;# config: RateLimiterConfig&lt;br&gt;# type: RateLimiterType&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- allowRequest(userId): boolean&lt;/p&gt;" vertex="1">
+          <mxGeometry height="140" width="260" x="1010" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-42" edge="1" parent="1" source="YlkJujCgIezjYRT9a3T3-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" target="YlkJujCgIezjYRT9a3T3-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="YlkJujCgIezjYRT9a3T3-41" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;RateLimiterFactory&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ createRateLimiter(algo, config)&lt;/p&gt;" vertex="1">
+          <mxGeometry height="90" width="160" x="1540" y="495" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
